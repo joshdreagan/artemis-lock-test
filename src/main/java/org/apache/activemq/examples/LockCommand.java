@@ -33,13 +33,10 @@ public class LockCommand implements Runnable {
       Runtime.getRuntime().addShutdownHook(new Thread(() -> System.out.println("Stop time: " + System.currentTimeMillis())));
       System.out.println("Start time: " + System.currentTimeMillis());
       System.out.println("Waiting to acquire lock...");
-      long startTime = System.currentTimeMillis();
       fileLockNodeManager.start();
       ActivateCallback callback = fileLockNodeManager.startPrimaryNode();
       callback.activationComplete();
-      long endTime = System.currentTimeMillis();
-      System.out.println("Lock time: " + endTime);
-      System.out.println("Acquired lock in " + (endTime - startTime) + " millis.");
+      System.out.println("Lock time: " + System.currentTimeMillis());
       System.out.println("Press ctrl+c to quit.");
       while (true) {
         Thread.sleep(1000L);
