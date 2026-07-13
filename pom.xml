@@ -13,17 +13,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.source>25</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
     <skipITs>true</skipITs>
     <quarkus.package.jar.type>uber-jar</quarkus.package.jar.type>
 
-    <compiler-plugin.version>3.14.0</compiler-plugin.version>
-    <surefire-plugin.version>3.5.2</surefire-plugin.version>
+    <compiler-plugin.version>3.15.0</compiler-plugin.version>
+    <surefire-plugin.version>3.5.6</surefire-plugin.version>
 
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-    <quarkus.platform.version>3.22.1</quarkus.platform.version>
-    <artemis.version>2.40.0</artemis.version>
+    <quarkus.platform.version>3.37.2</quarkus.platform.version>
+    <artemis.version>2.55.0</artemis.version>
   </properties>
 
   <dependencyManagement>
